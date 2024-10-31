@@ -1,6 +1,54 @@
+/* Grid Container Adjustments */
+.grid-container {
+  display: grid;
+  height: calc(100vh - var(--header-height) - var(--footer-height) - 1rem);
+  padding: 1rem;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
 
-.fluid-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-    gap: 1rem;
+/* Title Section */
+.slide .title {
+  min-width: 100%;
+  margin-top: 0.5rem;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+/* Fluid Columns Adjustments */
+.fluid-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.33rem;
+  overflow-y: auto;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* Grid Item Styles */
+.grid-item.card {
+  background-color: var(--card);
+  padding: 0.5rem;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item h2 {
+  margin: 0 0 0.5rem;
+}
+
+.grid-item p {
+  margin: 0.5rem 0;
+}
+
+
+/* Ensure text fits within the code container */
+.code-container[contenteditable="true"] {
+  outline: none;
 }
