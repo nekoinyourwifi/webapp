@@ -1,0 +1,46 @@
+@font-face{
+    font-family: 'MiFuentePersonalizada';
+    src: url(../assets/icons/WendyOne-Regular.ttf) format('Truetype');
+}
+body {
+    background-color: #f0f0f0;
+    font-family: 'MiFuentePersonalizada';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffa7d6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #e41289;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #e41289;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #c800ff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(../assets/COOPBL.TTF);
+    src: url(../assets/icons/COOPBL.TTF);
 }
 body {
     font-family: myFirstFont;
