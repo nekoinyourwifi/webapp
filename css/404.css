@@ -3,12 +3,12 @@
     src: url(../assets/icons/WendyOne-Regular.ttf) format('Truetype');
 }
 body {
-    background-color: #f0f0f0;
+    background-color: #ffa7d6;
     font-family: 'MiFuentePersonalizada';
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:auto;
     margin: 0;
 }
 
@@ -17,7 +17,7 @@ body {
     padding: 20px;
     background-color: #ffa7d6;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
 }
 
 h1 {
@@ -43,4 +43,5 @@ p {
 
 .button:hover {
     background-color: #e0a1ff;
+    color: pink;
 }
