@@ -1,38 +1,80 @@
-
 body {
-    font-family: "Nunito";
-    margin: 0;
-    padding: 0;
-    background-color: #F8F1DA;
-    color: #404497;
+  font-family: "Nunito";
+  margin: 0;
+  padding: 0;
+  background-color: #f8f1da;
+  color: #404497;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #404497;
+  color: #f8f1da;
+}
+
+.navbar .title {
+  font-size: 30px;
+  font-family: "Luckiest Guy";
+}
+
+.navbar a {
+  color: #f8f1da;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 12px;
+  line-height: 20px;
+  padding-right: 30px;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     text-align: center;
-    margin-top: 20px;
+  }
+  .navbar .menu {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 header h1 {
-    font-size: 5rem;
-    font-family: "Luckiest Guy";
-    margin: 0;
-    color: #404497;
+  font-size: clamp(4rem, -0.25rem + 4.333vw, 4.75rem);
+  font-family: "Luckiest Guy";
+  margin: 10;
+  color: #404497;
 }
 
 header h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 10px 0 0;
-    color: #404497;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0px;
+  color: #404497;
 }
 
-
 .image-container img {
-    margin: -140px;
-    max-width: 100%;
-    width: 900px; 
-    height: auto; 
+  margin: auto;
+  margin-top: 50px;
+  max-width: 100%;
+  width: 800px;
+  height: auto;
 }
 
 p {
-    font-size: 1rem;
-    text-align: center;
-    margin: 150px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px;
 }
