@@ -40,6 +40,15 @@ body {
   color: #f39c12;
 }
 
+.navbar-image-container {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-image:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -52,22 +61,15 @@ body {
 }
 
 header h1 {
-  font-size: clamp(4rem, -0.25rem + 4.333vw, 4.75rem);
-  font-family: "Luckiest Guy";
-  margin: 10;
-  color: #404497;
-}
-
-header h2 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 0px;
+  font-size: 30px;
+  font-family: "Nunito";
+  margin: 100px;
   color: #404497;
 }
 
 .image-container img {
   margin: auto;
-  margin-top: 50px;
+  margin-top: -60px;
   max-width: 100%;
   width: 800px;
   height: auto;
