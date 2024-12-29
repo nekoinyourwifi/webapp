@@ -8,6 +8,7 @@ body {
   margin-top: 20px;
 }
 
+/* Estilos generales de la navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -20,43 +21,72 @@ body {
   padding: 0 20px;
   background-color: #404497;
   color: #f8f1da;
+  z-index: 1000;
 }
 
 .navbar .title {
   font-size: 30px;
-  font-family: "Luckiest Guy";
+  font-family: "Luckiest Guy", sans-serif;
 }
 
-.navbar a {
+/* Contenedor del menú */
+.menu {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.menu a {
   color: #f8f1da;
   text-decoration: none;
-  margin: 0 10px;
   font-size: 12px;
   line-height: 20px;
   padding-right: 30px;
+  justify-content: center;
 }
 
-.navbar a:hover {
+.menu a:hover {
   color: #f39c12;
 }
 
+/* Contenedor de imágenes */
 .navbar-image-container {
   display: flex;
-  gap: 20px;
+  gap: -1px;
+  align-items: center;
+}
+
+.navbar-image {
+  max-width: 80px; /* Limitar el ancho máximo */
+  max-height: 80px; /* Limitar el alto máximo */
+  width: auto; /* Mantener proporción si es necesario */
+  height: auto; /* Ajustar el tamaño según proporción */
+  object-fit: contain; /* Asegurar que la imagen no se deforme */
+  transition: transform 0.3s ease;
+  padding-top: 5px;
+  padding-right: 20px;
 }
 
 .navbar-image:hover {
   transform: scale(1.1);
 }
 
+/* Diseño responsive */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
-  .navbar .menu {
-    flex-direction: column;
-    gap: 5px;
+
+  .menu {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar-image {
+    display: none;
   }
 }
 
@@ -67,7 +97,7 @@ header h1 {
   color: #404497;
 }
 
-.image-container img {
+.portada-container img {
   margin: auto;
   margin-top: -60px;
   max-width: 100%;
