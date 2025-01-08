@@ -54,11 +54,11 @@ body {
 }
 
 .navbar-image {
-  max-width: 80px; /* Limitar el ancho máximo */
-  max-height: 80px; /* Limitar el alto máximo */
-  width: auto; /* Mantener proporción si es necesario */
-  height: auto; /* Ajustar el tamaño según proporción */
-  object-fit: contain; /* Asegurar que la imagen no se deforme */
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.3s ease;
   padding-top: 5px;
   padding-right: 20px;
@@ -68,7 +68,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Diseño responsive */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;
